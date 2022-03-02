@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,10 @@
     <title>Login</title>
 </head>
 <body>
-    <input type="submit" value="Volver al inicio">
+    <div class="boton"> 
+        <a href="index.html"> Volver al inicio</a>
+    </div>
+   
     <img src="/imagenes/0. logoforja.png">
     <p>Contigo,siempre!</p>
     <label for="form">Usuario</label>
@@ -16,7 +19,12 @@
         <br><br>
         <label for="control">Contraseña:</label>
         <input name="password" id="password" type="password" requiredpattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"> 
-    <label></label> <!--Olvidaste tu contraseña-->
-    <input type="submit" value="Ingresar">
+        <div class="form-group" >
+            <a href="">¿Olvidaste tu contraseña?</a>
+        
+        </div>
+        <div class="boton"> 
+            <a href="dashboard.html"> Ingresar</a>
+        </div>
 </body>
 </html>
