@@ -8,23 +8,29 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="boton"> 
-        <a href="index.html"> Volver al inicio</a>
+    <button> <a href="index.html" >Volver al inicio</a></a>
+    </button>
     </div>
-   
-    <img src="/imagenes/0. logoforja.png">
-    <p>Contigo,siempre!</p>
-    <label for="form">Usuario</label>
-        <input name="nombre" id="nombre" type="text" required>
-        <br><br>
-        <label for="control">Contraseña:</label>
-        <input name="password" id="password" type="password" requiredpattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"> 
-        <div class="form-group" >
-            <a href="">¿Olvidaste tu contraseña?</a>
-        
-        </div>
-        <div class="boton"> 
-            <a href="dashboard.html"> Ingresar</a>
-        </div>
+   <main>
+       <section>
+           <article class="encabezado">
+                <img src="/imagenes/0. logoforja.png">
+                <p>Contigo,siempre!</p>
+            </article>
+
+            <article>
+                <label for="form">Usuario</label>
+                    <input name="nombre" id="nombre" type="text" required>
+                    <br><br>
+                <label for="control">Contraseña:</label>
+                    <input name="password" id="password" type="password" requiredpattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"> 
+
+                <div class="form-group" >
+                    <a href="">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button> <a href="dashboard.html" >Ingresar</a></a></button>
+        </section>
+    </main>
+    
 </body>
 </html>
