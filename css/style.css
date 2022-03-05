@@ -7,6 +7,291 @@
     --Cadet: #1D1B45;
 }
 body{
-    font-family:'Poppins', sans-serif;;
+    font-family:'Poppins', sans-serif;
+}
+h1,h2,h3{
+    color: var(--Orange);
+}
 
+p{
+   color: black; 
+}
+/*index*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+#info{
+    width: 100%;
+    display: flex;
+    margin:2rem 0rem 1rem 0rem ;
+    font-weight: lighter;
+}
+    .telefono{
+        display: flex;
+        margin: 3rem 1rem 2rem 30rem;
+        align-items: center; si es horizontal
+    
+        }
+        .telefono p{
+            text-align: left;
+            padding-left: 1.5rem; 
+            padding-bottom: 0.1rem;
+            font-weight: 300;
+            }
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        margin:1rem 0rem 0rem 3rem ;
+        
+    }
+        .ubicacion p{
+            text-align: left;
+            padding-left: 1.5rem; 
+            padding-bottom: 0.1rem;
+            font-weight: 300;
+        }
+    .botonprincipal{
+        display: flex;
+        justify-content: center;
+        width:9rem;
+        height: 2rem;
+        background-color: rgb(11, 87, 149);
+        border-radius: 15rem;
+        text-decoration: none;
+        margin: 10px 10px; 
+        padding-top: 0.1rem;
+    }
+    .botonprincipal a{
+        text-align: center;
+        font-weight: 800;
+        text-decoration: none;
+        color:white;
+       
+
+    }
+    .icon{
+        color: white;
+        padding-top: 0.2rem;
+        margin-left: 0.4rem;
+        width: 10px;
+    }
+    .lugarbtn{
+        margin-left: 32rem;
+        margin-top: 2.8rem;
+    }
+      
+
+#vacuna{
+    width: 3rem;
+    padding: 0rem 5rem 1.2rem 0.2rem;
+    align-items:baseline;
+    color: #F3610E;
+}
+#linea{
+    width:80rem;
+}
+
+.texto{
+    background-image: url(/imagenes/2.\ medico.png);
+    height: 42.2rem;
+
+}
+.texto h1{
+    color:black;
+    font-size: 60px;
+    margin: 0.2rem;
+    padding: 0rem 5rem 0rem 25rem;
+    font-weight: 400;
+}
+.texto h2{
+    font-size: 40px;
+    padding: 10rem 5rem 0rem 16rem;
+    margin: 0.1rem;
+    font-weight: 300;
+}
+
+.ubicacionbtn2{
+    padding: 0rem 2rem 0rem 27rem;
+
+}
+.imagenlinea{
+    background-image: url(/imagenes/3.\ franjaninios.svg);
+    height: 6rem ;
+    background-color: rgba(243, 97, 14, 0.8);
+    width: 180rem;
+}
+
+
+#infos{
+    display:flex;
+    background-image: url(/imagenes/4.\ covid.jpeg);
+    justify-content: space-around;
+    background-color:  rgba(255, 255, 255, 0.747);
+    
+}
+.signos{
+    background-color:  rgba(255, 255, 255, 0.747);
+    width: 73rem;
+    
+}
+
+.subtitulos{
+    display: flex;
+    font-size: 22px;
+    padding: 0rem 12rem;
+
+}
+    .subtitulos h3{
+        color: #455BBB;
+        font-weight: 500;
+    }
+    .subtitulos img{
+        width:60px ;
+        padding-right: 2rem;
+    }
+
+    .lista ul{
+        text-align: left;
+        font-size: 19px;
+        list-style-image: url(/imagenes/6.\ check.svg);
+        padding: 1rem 24rem;
+    }
+
+.quehacer{
+    background-color:  rgba(255, 255, 255, 0.747);
+    width: 73rem;
+}
+.quehacerinfo p{
+    font-size: 22px;
+    padding:0rem 12rem ;
+    text-align: justify;
+}
+
+.quehacerinfo img{
+    width:150px;
+    padding: 0rem 25rem;
+    
+}
+.quehacerinfo a{
+    color:#455BBB ;
+    padding: 5rem 19rem;
+    margin: 1rem;
+
+}
+
+#tips{
+    display: flex;
+    flex-direction: column;
+    background-color: #242336;
+    color: white;
+    border-color: white;
+    border-radius: 2px;
+}
+#tips p{
+    color: white;
+    
+}
+
+footer{
+    display: flex;
+    background-color:  black;
+    align-items: center;
+}
+.footp{
+    display: flex;
+    color:white;
+    padding-left:52rem ;
+
+}
+
+/*Login*/
+.background{
+    background-image: url(/imagenes/10.png);
+  
+}
+#volver{
+    display: flex;
+    background-color: #455BBB ;
+    align-items: flex-end;
+ 
+
+}
+#volver a{
+    text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        color:white;
+}
+#center{
+    background-color: #A40101;
+    display: flex;
+    align-items: center;
+   
+}
+#posicionvo{
+    
+}
+
+/*
+#login1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 3%;
+  
+
+    
+}
+#volver{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--Cadet);
+    border-radius: 10%;
+    
+}
+
+#volver a{
+    text-decoration: none;
+    color: white;
+
+    
+}
+/*
+.encabezado{
+    
+    background-color: var(--Viridian-green);
+    border-radius: 3%;
+    width:30rem;
+}
+
+.encabezado p{
+    text-align: center;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column; 
+}
+
+#usuario{
+    text-align: center;
+}
+
+.form-label{
+    text-align: left;
+    padding: 1rem 1rem;
+    border-radius: 30%;
+    border-color:var(--Viridian-green) ;
+    background-color: var(--Viridian-green);
+  
+}
+
+#ingresar{
+    display: flex;
+    justify-content: center;
+    align-items: center
 }

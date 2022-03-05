@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
 <body>
-    <button> <a href="index.html" >Volver al inicio</a></a>
-    </button>
-    </div>
+    
    <main>
-       <section>
-           <article class="encabezado">
-                <img src="/imagenes/0. logoforja.png">
-                <p>Contigo,siempre!</p>
-            </article>
+       <section id="center">
+            <section>
+                <button id="volver"><a href="index.html" >Volver al inicio</a>
+                </button>
+            </section>
+            <section id="box-login">
+                <article class="encabezado">
+                    <img src="imagenes/0. logoforja.png">
+                    <p>Contigo,siempre!</p>
+                </article>
 
-            <article>
-                <label for="form">Usuario</label>
-                    <input name="nombre" id="nombre" type="text" required>
-                    <br><br>
-                <label for="control">Contraseña:</label>
-                    <input name="password" id="password" type="password" requiredpattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"> 
-
-                <div class="form-group" >
-                    <a href="">¿Olvidaste tu contraseña?</a>
+                <article>
+                <div class="form-group">
+                    <label for="form" id="usuario">Usuario</label>
+                    <input class="form-label" name="nombre" id="nombre" type="text" required>
+            
+                
+                    <label for="control" id="usuario">Contraseña</label>
+                        <input class="form-label" name="password" id="password" type="password" requiredpattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
+    
+                    <a href="" class="olvidar">¿Olvidaste tu contraseña?</a>
+    
+                    <button id="ingresar"> <a href="dashboard.html" >Ingresar</a></a></button>
                 </div>
-                <button> <a href="dashboard.html" >Ingresar</a></a></button>
         </section>
     </main>
     
