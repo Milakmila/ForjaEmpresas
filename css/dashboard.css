@@ -27,12 +27,12 @@ p{
     align-items: center;
     background-color: var(--Cadet);
     width:20rem;
-    height: 41rem;
+    height: 54.5rem;
     float: left;
 }
 
 #izquierda img{
-    margin: 6.5rem 0.8rem;
+    margin: 10rem 0.8rem;
 }
 
 #izquierda i{
@@ -56,6 +56,7 @@ p{
     border-radius: 2px;
     border-width: 10px;
     border-color: #F3610E;
+    box-shadow:5px solid var(--Orange) ;
 
 }
 
@@ -129,4 +130,5 @@ p{
     display: flex;
     justify-content: flex-end;
     align-items:flex-end ;
+    margin-top: 20rem;
 }

@@ -8,53 +8,59 @@
     <title>Pacientes</title>
 </head>
 <body>
+    <header>
     <div class="superior">
-        <img src="/imagenes/0. logoforja.png">
-        <!--Buscar icono de casita y usuario adentro-->
-        <img src="/imagenes/off.svg">
-        <div class="abajo"> <!--REvisar el class porque esta en dashboard-->
-            <img src="/imagenes/3. franjaninios.svg">
-            <img src="/imagenes/1. linea.png">
+        <img src="imagenes/0. logoforja.png">
+        <i class="fa-solid fa-house-user"></i>
+        <img src="imagenes/off.svg">
+        <div class="abajosub"> <!--REvisar el class porque esta en dashboard-->
+            <img src="imagenes/3. franjaninios.svg">
+            <img src="imagenes/1. linea.png">
         </div>
+    </header>
     </div>
-    <div>
-        <div class="boton"> 
-            <a href=""> Agregar</a><!--REvisar como es esto de agregar-->
-        </div>
-        <h3>Pacientes</h3>
-        <label for="buscar"></label>
-            <input type="search" name="search" id="search" placeholder=" Numero de documento ">
-            <input type="submit" value="Buscar">
+    <main>
+        <section>
+            <div class="boton"> 
+                <a href=""> Agregar</a><!--REvisar como es esto de agregar-->
+            </div>
+            <h3>Pacientes</h3>
+            <label for="buscar"></label>
+                <input type="search" name="search" id="search" placeholder=" Numero de documento ">
+                <input type="submit" value="Buscar">
             <img src="/imagenes/bx-search.svg">
-    </div>
-    <table border="2px">
-        <tr>
-            <th># DE REGISTRO</th>
-            <th># DOCUMENTO</th>
-            <th>NOMBRES</th>
-            <th>APELLIDOS</th>
-            <th>EDAD</th>
-            <th>ACCIONES</th>
-        </tr>
-        <tr> <!--Esta info se queda asi-->
-            <td>111</td>
-            <td>456231</td>
-            <td>Paola</td>
-            <td>Perezeses</td>
-            <td>2+16</td>
-            <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
+        </section>
+        <section id="table">
+   
+
+            <table border="2px">
+            <tr>
+                <th># DE REGISTRO</th>
+                <th># DOCUMENTO</th>
+                <th>NOMBRES</th>
+                <th>APELLIDOS</th>
+                <th>EDAD</th>
+                <th>ACCIONES</th>
+            </tr>
+            <tr> <!--Esta info se queda asi-->
+                <td>111</td>
+                <td>456231</td>
+                <td>Paola</td>
+                <td>Perezeses</td>
+                <td>2+16</td>
+                <td>
+                    <div class="form-group">
+                        <input type="submit" name="editar" class="btn-azul" value="Editar">
                     <img src="/imagenes/pencil.svg">
-                </div>
+                    </div>
         
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
-                </div>
+                    <div  class="form-group">
+                        <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
+                        <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                    </div>
         
-            </td>
-        </tr>
+                </td>
+            </tr>
         <tr>
             <td>210236</td>
             <td>654+656+</td>
@@ -150,6 +156,9 @@
         
             </td>
         </tr>
+    </section>
+    </main>
+    
     </table>
     <footer>
         <p>@2020 FORJA EMPRESAS</p>

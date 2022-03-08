@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root{
     --Rufous:#A40101;
-    --Viridian-green:#2CA3AB;
+    --Viridian-green: rgb(44, 163, 171);
     --Silver:#C4C4C4;
     --Orange:#F3610E;
-    --Cadet: #1D1B45;
+    --Cadet: rgb(29, 27, 69);
 }
 body{
     font-family:'Poppins', sans-serif;
@@ -30,7 +30,7 @@ header{
     .telefono{
         display: flex;
         margin: 3rem 1rem 2rem 30rem;
-        align-items: center; si es horizontal
+        align-items: center; 
     
         }
         .telefono p{
@@ -39,6 +39,7 @@ header{
             padding-bottom: 0.1rem;
             font-weight: 300;
             }
+
     .ubicacion{
         display: flex;
         align-items: center;
@@ -54,7 +55,7 @@ header{
     .botonprincipal{
         display: flex;
         justify-content: center;
-        width:9rem;
+        width:8.8rem;
         height: 2rem;
         background-color: rgb(11, 87, 149);
         border-radius: 15rem;
@@ -63,39 +64,56 @@ header{
         padding-top: 0.1rem;
     }
     .botonprincipal a{
+        padding: 0.2rem;
         text-align: center;
-        font-weight: 800;
+        font-weight: 900;
         text-decoration: none;
         color:white;
-       
-
-    }
-    .icon{
-        color: white;
-        padding-top: 0.2rem;
-        margin-left: 0.4rem;
-        width: 10px;
+    
     }
     .lugarbtn{
         margin-left: 32rem;
         margin-top: 2.8rem;
     }
-      
-
-#vacuna{
-    width: 3rem;
-    padding: 0rem 5rem 1.2rem 0.2rem;
+    .icon{
+        color: white;
+        padding-top: 0.4rem;
+        margin-left: 0.4rem;
+        width: 10px;
+    }
+    
+.iconovaccine{
+    width: 500px;
+    padding: 0rem 5rem 1.5rem 1rem;
     align-items:baseline;
     color: #F3610E;
 }
 #linea{
     width:80rem;
+    padding-left: 430px;
 }
 
+#linea2{
+    
+    width:80rem;
+    padding-left: 605px;
+}
+/*Main*/
+ 
+
 .texto{
-    background-image: url(/imagenes/2.\ medico.png);
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/2.\ medico.png);
     height: 42.2rem;
 
+}
+
+.texto h2{
+    font-size: 40px;
+    padding: 10rem 5rem 0rem 16rem;
+    margin: 0.1rem;
+    font-weight: 300;
 }
 .texto h1{
     color:black;
@@ -104,28 +122,26 @@ header{
     padding: 0rem 5rem 0rem 25rem;
     font-weight: 400;
 }
-.texto h2{
-    font-size: 40px;
-    padding: 10rem 5rem 0rem 16rem;
-    margin: 0.1rem;
-    font-weight: 300;
-}
 
 .ubicacionbtn2{
     padding: 0rem 2rem 0rem 27rem;
 
 }
 .imagenlinea{
-    background-image: url(/imagenes/3.\ franjaninios.svg);
-    height: 6rem ;
-    background-color: rgba(243, 97, 14, 0.8);
-    width: 180rem;
+    background-image: url(../imagenes/3.\ franjaninios.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    border-bottom: 5px solid rgb(2,190,190);
+    
 }
 
 
 #infos{
     display:flex;
-    background-image: url(/imagenes/4.\ covid.jpeg);
+    background-image: url(../imagenes/4.\ covid.jpeg);
+
+    width: 100%;
     justify-content: space-around;
     background-color:  rgba(255, 255, 255, 0.747);
     
@@ -154,7 +170,7 @@ header{
     .lista ul{
         text-align: left;
         font-size: 19px;
-        list-style-image: url(/imagenes/6.\ check.svg);
+        list-style-image: url(../imagenes/6.\ check.svg);
         padding: 1rem 24rem;
     }
 
@@ -181,22 +197,34 @@ header{
 }
 
 #tips{
+    height: 439px;
+    background-color: gray;
     display: flex;
     flex-direction: column;
-    background-color: #242336;
     color: white;
     border-color: white;
     border-radius: 2px;
 }
 #tips p{
+    background-color: #242336;
     color: white;
-    
+    margin-top: 0.1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.blanco{
+    background-color: white;
+    padding: 0.6rem;
 }
 
 footer{
+    height: 100px;
     display: flex;
     background-color:  black;
     align-items: center;
+    margin-bottom: 0.6rem;
 }
 .footp{
     display: flex;
@@ -205,93 +233,183 @@ footer{
 
 }
 
-/*Login*/
-.background{
-    background-image: url(/imagenes/10.png);
-  
-}
-#volver{
-    display: flex;
-    background-color: #455BBB ;
-    align-items: flex-end;
- 
+/*Pacientes*/
 
-}
-#volver a{
-    text-align: center;
-        font-weight: 600;
-        text-decoration: none;
-        color:white;
-}
-#center{
-    background-color: #A40101;
-    display: flex;
+.superior{
+    background-color: #1D1B45;
     align-items: center;
-   
-}
-#posicionvo{
-    
-}
-
-/*
-#login1{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.superior img{
+    margin-right: 57rem;
+}
+.superior i{
     background-color: white;
-    border-radius: 3%;
-  
-
-    
+    padding: 0.7rem;
+    align-items: flex-end;
+    margin: 0.3rem ;
+    border-radius: 50%;
+    border-width:1rem ;
+    border-color: #2CA3AB; 
 }
-#volver{
+
+.imagenlinea{
+    background-image: url(../imagenes/3.\ franjaninios.svg);
+    height: 6rem ;
+    background-color: rgba(243, 97, 14, 0.8);
+    width: 180rem;
+}
+.franjaninos{
+    background-image: url(../images/3.\ franjaninios.svg);
+    width: 50%;
+}
+.medio {
     display: flex;
-    align-items:center;
-    justify-content: center;
-    background-color: var(--Cadet);
-    border-radius: 10%;
-    
+    justify-content: space-between ;
+    margin-left: 4rem;
+    margin-right:11rem;
+
+}
+.agregar{
+    background-color: var(--Orange);
+    padding:0.5rem ;
+    border-radius: 4px;
+
+}
+.agregar a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
-#volver a{
+#search2{
+    display: flex;
+    flex-direction: row;
+    width:180px ;
+    border-radius: 3px;
+    border-color: var(--Viridian-green);
+    margin-right: 1rem;
+}
+.pacientes {
+    color: #1D1B45;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight:400 ;
+    text-align: center;
+
+}
+
+#tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #2CA3AB ;
+    border-width: 3px;
+    border-radius: 4px;
+}
+
+#tabla th {
+    background-color: #1D1B45;
+    color: white;
+    padding: 0.9rem 2rem;
+    font-weight: 400;
+}
+#tabla td {
+    background-color: #C4C4C4;
+}
+
+.btn-azul{
+    background-color: #2CA3AB;
+    border-radius: 4px;
+}
+.btn-rojo{
+    background-color: #A40101;
+    border-radius: 4px;
+}
+.btn-rojo a{
     text-decoration: none;
     color: white;
 
-    
-}
-/*
-.encabezado{
-    
-    background-color: var(--Viridian-green);
-    border-radius: 3%;
-    width:30rem;
 }
 
-.encabezado p{
+/*Registro*/
+
+.tituloforms h1{
     text-align: center;
-
+    color: white;
+    background-color: var(--Cadet);
+    font-weight: 300;
+    border-radius: 10px;
+    
 }
 
+#forms{
+    display: flex;
+    flex-direction: column;
+    background-color: #C4C4C4;
+    margin: 3rem;
+    padding: 2rem;
+    border-color:  #242336;
+
+}
 .form-group{
     display: flex;
-    flex-direction: column; 
-}
+    flex-direction: row;
 
-#usuario{
-    text-align: center;
 }
 
 .form-label{
-    text-align: left;
-    padding: 1rem 1rem;
-    border-radius: 30%;
-    border-color:var(--Viridian-green) ;
-    background-color: var(--Viridian-green);
-  
+    margin: 0.6rem 0.7rem;
+    text-align: center;
+    border-color: #2CA3AB;
+}
+.form-label-largo{
+    margin: 0.6rem 0.7rem;
+    border-color: #2CA3AB;
+    width: 500px;
+    height:28px ;
+    
 }
 
-#ingresar{
+
+.divisionforms{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2CA3AB;
+    border-radius: 10px;
+}
+.divisionforms h4{
+    font-weight: 400;
+    color: white;
+}
+
+.sino{
+    text-align: center;
+    margin: 0.5rem ;
+    
+}
+.sino label{
+    display: flex;
+    text-align: left;
+}
+
+.guardar{
     display: flex;
     justify-content: center;
-    align-items: center
+    width:9rem;
+    height: 2rem;
+    background-color: rgb(11, 87, 149);
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px 870px; 
+    padding-top: 0.1rem;
+}
+.guardar a{
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    color:white;
+
 }

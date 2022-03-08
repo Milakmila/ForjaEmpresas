@@ -8,7 +8,9 @@
 }
 body{
     font-family:'Poppins', sans-serif;
-    background-image: url(/imagenes/10.png);
+    background-image: url(../imagenes/10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 h1,h2,h3{
@@ -23,11 +25,12 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:4rem;
+    margin:8rem;
 }
 
 
 #volver {
+    font-family:'Poppins', sans-serif;
     margin-bottom: 1rem;
     margin-left: 18rem;
     background-color: #455BBB;
@@ -56,7 +59,7 @@ p{
 }
 .encabezado{
     background-color: rgba(44, 163, 171,0.49);
-    padding: 0.8rem 5rem;
+    padding: 3rem 5rem;
     margin-bottom:0.1rem;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
 }
@@ -66,19 +69,21 @@ p{
 .encabezado p{
     font-size: 15px;
     text-align: center;
+    font-weight: 400;
 }
 
 .form-group{
     text-align: center;
     border-radius: 0.8rem;
     padding-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 1rem;
     
 }
 
 .form-label{
     display: flex;
+    background-color: rgba(44, 163, 171,0.49);
     margin-top: 0.2rem;
     margin-left: 3.2rem;
     margin-bottom: 0.8rem;
@@ -89,12 +94,15 @@ p{
     width: 16rem;
 }
 .olvidar{
+    color: black;
     display: flex;
     justify-content: center;
     font-size: 11px;
     margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 #ingresar{
+    font-family:'Poppins', sans-serif;
     background-color: var(--Orange);
     border-color: var(--Cadet);
     border-width: 2px;
