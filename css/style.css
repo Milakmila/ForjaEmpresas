@@ -21,6 +21,10 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
+button{
+    font-family:'Poppins', sans-serif;
+
+}
 #info{
     width: 100%;
     display: flex;
@@ -57,40 +61,47 @@ header{
         justify-content: center;
         width:8.8rem;
         height: 2rem;
-        background-color: rgb(11, 87, 149);
+        background-color: rgba(11, 87, 149,1);
         border-radius: 15rem;
         text-decoration: none;
         margin: 10px 10px; 
         padding-top: 0.1rem;
     }
+    
     .botonprincipal a{
+        color: white;
         padding: 0.2rem;
         text-align: center;
-        font-weight: 900;
+        font-weight: 800;
         text-decoration: none;
-        color:white;
-    
+        
     }
     .lugarbtn{
         margin-left: 32rem;
         margin-top: 2.8rem;
     }
+
     .icon{
         color: white;
         padding-top: 0.4rem;
         margin-left: 0.4rem;
         width: 10px;
     }
-    
+ .icono{
+     display: flex;
+     flex-direction: row;
+     padding-bottom: 3rem;
+ }
 .iconovaccine{
-    width: 500px;
-    padding: 0rem 5rem 1.5rem 1rem;
+    padding: 0.1rem 5rem 0rem 1rem;
     align-items:baseline;
     color: #F3610E;
 }
 #linea{
-    width:80rem;
-    padding-left: 430px;
+    width:70rem;
+    padding-left: 125px;
+    padding-bottom:1rem ;
+    
 }
 
 #linea2{
@@ -106,6 +117,7 @@ header{
     flex-direction: column;
     background-image: url(../imagenes/2.\ medico.png);
     height: 42.2rem;
+    margin: 0.2rem;
 
 }
 
@@ -113,26 +125,23 @@ header{
     font-size: 40px;
     padding: 10rem 5rem 0rem 16rem;
     margin: 0.1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 .texto h1{
     color:black;
     font-size: 60px;
-    margin: 0.2rem;
+    margin: 0.1rem;
     padding: 0rem 5rem 0rem 25rem;
     font-weight: 400;
 }
 
 .ubicacionbtn2{
-    padding: 0rem 2rem 0rem 27rem;
+    padding: 0.1rem 2rem 0rem 27rem;
 
 }
-.imagenlinea{
-    background-image: url(../imagenes/3.\ franjaninios.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70px;
-    border-bottom: 5px solid rgb(2,190,190);
+#abajo{
+    margin-top: 0.1rem;
+    margin-bottom: 3rem;
     
 }
 
@@ -140,7 +149,6 @@ header{
 #infos{
     display:flex;
     background-image: url(../imagenes/4.\ covid.jpeg);
-
     width: 100%;
     justify-content: space-around;
     background-color:  rgba(255, 255, 255, 0.747);
@@ -148,39 +156,49 @@ header{
 }
 .signos{
     background-color:  rgba(255, 255, 255, 0.747);
-    width: 73rem;
-    
+    width: 73rem;  
 }
 
 .subtitulos{
     display: flex;
     font-size: 22px;
-    padding: 0rem 12rem;
+    padding: 1rem 12rem;
 
 }
     .subtitulos h3{
-        color: #455BBB;
+        color: rgba(11, 87, 149,1);
         font-weight: 500;
     }
     .subtitulos img{
-        width:60px ;
+        width:50px ;
         padding-right: 2rem;
     }
 
     .lista ul{
-        text-align: left;
+        list-style: none;
+        text-align:left;
         font-size: 19px;
-        list-style-image: url(../imagenes/6.\ check.svg);
-        padding: 1rem 24rem;
+        padding: 1rem 18rem;
+    }
+    .check{
+        width: 38px;
+        margin-right: 0.5rem;
+    }
+    .lista li{
+        
+        padding-bottom: 1rem;
+
     }
 
 .quehacer{
     background-color:  rgba(255, 255, 255, 0.747);
     width: 73rem;
+    
 }
 .quehacerinfo p{
     font-size: 22px;
-    padding:0rem 12rem ;
+    padding:0rem 12rem 1rem 12rem;
+    margin-bottom: 1rem;
     text-align: justify;
 }
 
@@ -190,14 +208,14 @@ header{
     
 }
 .quehacerinfo a{
-    color:#455BBB ;
-    padding: 5rem 19rem;
-    margin: 1rem;
+    color: rgba(11, 87, 149,1) ;
+    padding: 3rem 18rem;
+    margin: 2rem;
 
 }
 
 #tips{
-    height: 439px;
+    height: 385px;
     background-color: gray;
     display: flex;
     flex-direction: column;
@@ -209,71 +227,339 @@ header{
     background-color: #242336;
     color: white;
     margin-top: 0.1rem;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin-bottom: 1rem;
 
 }
 
 .blanco{
     background-color: white;
-    padding: 0.6rem;
-}
-
-footer{
-    height: 100px;
-    display: flex;
-    background-color:  black;
-    align-items: center;
-    margin-bottom: 0.6rem;
+    padding: 0.6rem 0  0 0.1rem;
 }
 .footp{
     display: flex;
-    color:white;
-    padding-left:52rem ;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 55rem;
+    height: 100px;
+}
+/*Login*/
+
+#background{
+    background-image: url(../imagenes/10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:8rem;
+}
+
+
+#volver {
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    margin-left: 18rem;
+    background-color:var(--Cadet);
+    border-color: #2CA3AB;
+    border-radius: 8px;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
+    padding: 0.2rem 0.5rem;
+}
+#volver a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+#box-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-width: 2px;
+    border-radius: 0.8rem;
+    font-weight: 300;
+    box-shadow: #1D1B45;]/*Sombra*/
+    
+}
+.encabezado{
+    background-color: rgba(44, 163, 171,0.45);
+    padding: 3rem 5rem;
+    margin-bottom:0.1rem;
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+.encabezado img{
+    width:15rem;
+}
+.encabezado p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-group-login{
+    text-align: center;
+    border-radius: 0.8rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    margin: 1rem;
+    
+}
+
+.form-label-login{
+    display: flex;
+    background-color: rgba(44, 163, 171,0.15);
+    margin-top: 0.2rem;
+    margin-left: 3.2rem;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem ;
+    border-radius: 0.8rem;
+    border-color:  rgba(44, 163, 171,0.45);
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
+    width: 16rem;
+}
+.olvidar{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+#ingresar{
+    font-family:'Poppins', sans-serif;
+    background-color: var(--Orange);
+    border-color: var(--Cadet);
+    border-radius: 10px;
+    border-style: solid ;
+    background-color: ;
+    border-width: 1px;
+    outline: none;
+    padding: 0.3rem 2rem;
+}
+#ingresar a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/*dashboard*/
+a:link{color:black}
+a:visited {color:black}
+a:focus{color: #A40101;}
+
+#izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Cadet);
+    width:21rem;
+    height: 59rem;
+    float: left;
+}
+
+#izquierda img{
+    margin: 10rem 0.8rem;
+    
+}
+
+#izquierda i{
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 0rem;
+    font-size:22px;
+    text-decoration: none;
 
 }
 
+#izquierda h4{
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem 0rem
+}
+
+.box-izquierda{
+    display: flex;
+    justify-content: center;
+    background-color: #C4C4C4;
+    width: 21rem;
+    margin: 1rem 0rem;
+    border-radius: 10px;
+    border-color: var(--Orange);
+    border-style: solid ;
+    border-width: 2px;
+    outline: none;
+}
+
+.box-izquierda a{
+    text-decoration: none;
+}
+
+.box-izquierda:hover{
+    background-color:var(--Orange);
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function:ease-in-out;
+    transition-delay: 1s;}
+ 
+
+.usuario {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #C4C4C4;
+    margin-left: 102rem;
+    text-align: left;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+.icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 35px;
+    border-color: #F3610E;
+    background-color:white ;
+    border-radius: 50%;
+}
+.usuario i{
+    display: flex;
+    align-items: center;
+    margin-right:0.5rem ;
+    background-color: white;
+    
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0rem 2rem;
+    
+}
+.principal h2{
+    margin-top:3rem ;
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 7rem;
+}
+
+.botones{
+    display: flex;
+    padding: 0rem 0.9rem;
+    margin:0rem 3rem;
+    
+}
+.botones button {
+    width: 2.5rem;
+    height: 1.8rem;
+    background-color: var(--Cadet);
+    border-color: var(--Viridian-green);
+    border-width: 3.5px;
+    border-radius: 5px;
+    margin-left:  1rem;
+}
+
+
+#search {
+    font-family:'Poppins', sans-serif;
+    width: 360px;
+   text-align: left;
+   border-width: 1px;
+   font-size:18px ;
+   border-color: white;
+   border-width: 0px;
+   border-bottom: 2px var(--Cadet);
+   padding-left: 1.5rem;
+   border-style: groove;
+   
+}
+
+.buscador{
+    color: white;
+}
+
+.reload{
+    color: white;
+}
+.guerreros {
+    margin: 10rem 90rem;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    opacity: .5;
+    }
+
+#abajo{
+    position: relative;
+    left:0rem ;
+    bottom: 5rem;
+
+}
+#barra img{
+    flex-basis:90%;
+    position: absolute;
+    bottom:0;
+    max-width: 98%;
+    max-height: 98%;
+}
 /*Pacientes*/
 
 .superior{
     background-color: #1D1B45;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+
 }
 .superior img{
-    margin-right: 57rem;
+    margin-right: 90rem;
 }
 .superior i{
     background-color: white;
-    padding: 0.7rem;
+    padding: 1rem;
     align-items: flex-end;
-    margin: 0.3rem ;
+    margin: 0.9rem ;
     border-radius: 50%;
-    border-width:1rem ;
-    border-color: #2CA3AB; 
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 2px;
 }
 
-.imagenlinea{
-    background-image: url(../imagenes/3.\ franjaninios.svg);
-    height: 6rem ;
-    background-color: rgba(243, 97, 14, 0.8);
-    width: 180rem;
-}
-.franjaninos{
-    background-image: url(../images/3.\ franjaninios.svg);
-    width: 50%;
-}
-.medio {
+.abajosub{
+    margin-top: 1px;
+}  
+#botones{
     display: flex;
-    justify-content: space-between ;
-    margin-left: 4rem;
-    margin-right:11rem;
-
+    justify-content: space-between;
+    margin: 2rem 5rem;
 }
+
 .agregar{
     background-color: var(--Orange);
     padding:0.5rem ;
     border-radius: 4px;
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
 
 }
 .agregar a{
@@ -298,40 +584,71 @@ footer{
     text-align: center;
 
 }
+.buscar2{
+    width: 2.5rem;
+    height: 1.8rem;
+    background-color: var(--Cadet);
+    border-color: var(--Viridian-green);
+    border-width: 3.5px;
+    border-radius: 5px;
+    margin-left:  1rem;
 
-#tabla{
+}
+.titulopa h3{
+    text-align: center;
+    color: #1D1B45;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 2rem;
+}
+#table{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-color: #2CA3AB ;
-    border-width: 3px;
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
     border-radius: 4px;
 }
 
-#tabla th {
+#table th {
     background-color: #1D1B45;
     color: white;
     padding: 0.9rem 2rem;
     font-weight: 400;
 }
-#tabla td {
+#table td {
     background-color: #C4C4C4;
+}
+.form-group3{
+    margin:0.3rem 3rem;
+    
 }
 
 .btn-azul{
     background-color: #2CA3AB;
     border-radius: 4px;
+    height: 2rem;
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
+    margin-right: 0.4rem;
 }
 .btn-rojo{
+    height: 2.1rem;
     background-color: #A40101;
     border-radius: 4px;
-}
-.btn-rojo a{
-    text-decoration: none;
+    border-color: #A40101;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
     color: white;
-
+    text-decoration: none;
 }
+
 
 /*Registro*/
 
@@ -348,27 +665,30 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: #C4C4C4;
-    margin: 3rem;
+    margin: 0 23rem;
     padding: 2rem;
     border-color:  #242336;
 
 }
-.form-group{
-    display: flex;
-    flex-direction: row;
 
-}
 
 .form-label{
     margin: 0.6rem 0.7rem;
     text-align: center;
     border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
 }
 .form-label-largo{
     margin: 0.6rem 0.7rem;
     border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
     width: 500px;
     height:28px ;
+    outline: none;
+
     
 }
 
@@ -395,21 +715,4 @@ footer{
     text-align: left;
 }
 
-.guardar{
-    display: flex;
-    justify-content: center;
-    width:9rem;
-    height: 2rem;
-    background-color: rgb(11, 87, 149);
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 10px 870px; 
-    padding-top: 0.1rem;
-}
-.guardar a{
-    text-align: center;
-    font-weight: 800;
-    text-decoration: none;
-    color:white;
 
-}

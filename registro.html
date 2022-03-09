@@ -13,28 +13,31 @@
 </head>
 
 <body>
-    <div class="superior">
-        <img src="imagenes/0. logoforja.png">
-        <!--Buscar icono de casita y usuario adentro-->
-        <img src="imagenes/off.svg">
-        <div class="abajo"> <!--REvisar el class porque esta en dashboard-->
-            <img src="imagenes/3. franjaninios.svg">
-            <img src="imagenes/1. linea.png">
-        </div>
-    </div>
-
+    <header>
+        <div class="superior">
+            <img src="imagenes/0. logoforja.png">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house-user"></i>
+                </a>
+                <a href="index.html">
+                <i class="fa-solid fa-power-off"></i>
+                </a>
+                <div class="abajosub"> <!--REvisar el class porque esta en dashboard-->
+                    <img src="imagenes/franja.jpg">
+                </div>
+        </header>
 <main>
     <div class="tituloforms">
         <h1>Registro Usuario Nuevo</h1>
     </div>
     <section id="forms">
     
-    <div class="form-group">
+    <div>
         <input class="form-label" type="date" id="date" name="fecha"> <!--min y max para no mostrar todas las fechas-->
         <input class="form-label"  name="Registro" id="registro" type="number" placeholder="N registro" required="number"> 
     </div>
     <div class="divisionforms">
-        <img src="imagenes/user.svg">
+        <i class="fa-solid fa-user icon"></i>
         <h4>DATOS DEL PACIENTE</h4>
     </div>
     <div class="form-group">
@@ -43,23 +46,30 @@
             <input class="form-label-largo"   name="apellidos" id="apellidos" type="text" placeholder="Apellidos" required="text"> 
     </div>
     <div class="form-group">
-            <input class="form-label-largo"    name="identificacion" id="identificacion" type="number" placeholder="Numero de identificacion" required="number" max="10"> 
+        <input class="form-label-largo"    name="identificacion" id="identificacion" type="number" placeholder="Numero de identificacion" required="number" max="10"> 
+        
+    
+    <select class="form-label-largo"  name="select" id="tipodoc"> 
+            <option value="0" selected>Tipo de documento</option>
+                <option value="1">Cedula de ciudadania</option>
+                <option value="2">Tarjeta de identidad</option>
+                <option value="3">Pasaporte</option>
+                <option value="4">Registro civil</option>
+    </select>
 
-            <select class="form-label-largo"   name="tipodoc" id="tipodoc"> 
-                <option value="0" selected>Tipo de documento</option>
-                    <option value="1">Cedula de ciudadania</option>
-                    <option value="2">Tarjeta de identidad</option>
-                    <option value="3">Pasaporte</option>
-                    <option value="4">Registro civil</option>
+        
     </div>
+    
     <div class="form-group">
-        <input class=class="form-label-largo"    type="date" id="date" name="fecha"> 
-
+        <input class="form-label-largo" type="date" id="date" name="fecha"> 
+        
         <input class="form-label-largo"   name="edad" id="edad" type="number" placeholder="Edad" required="number">   
         
     </div>
+    
+
     <div class="divisionforms">
-        <img src="imagenes/user.svg"><!--Icono location-->
+        <i class="fa-solid fa-location-dot icon2"></i>
         <h4>INFORMACIÓN PACIENTE</h4>
     </div>  
     <div class="form-group">
@@ -147,7 +157,7 @@
         <input class="form-label-largo"  name="celular" id="celular" type="number" placeholder="Celular" required> 
     </div>
         <div class="divisionforms">
-            <img src="imagenes/user.svg"><!--Icono location-->
+            <i class="fa-solid fa-heart-pulse icon"></i><!--Icono location-->
             <h4>ESTADO DE SALUD</h4><!--Imagen de corazon con signos vitales-->
         </div> 
     <div class="form-group">
@@ -213,7 +223,7 @@
     </div>
 
     </section>
-    <button class="guardar"> <a href="dashboard.html" >Guardar</a>
+    <button class="agregar"> <a href="dashboard.html" >Guardar</a>
         <i class="fa-solid fa-user icon"></i>
         </button> 
 </main>

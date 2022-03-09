@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="ES">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
     <title>Pacientes</title>
+    <link rel="icon"<i class="fa-solid fa-house-chimney"></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
+
 <body>
     <header>
     <div class="superior">
         <img src="imagenes/0. logoforja.png">
+        <a href="dashboard.html">
         <i class="fa-solid fa-house-user"></i>
-        <img src="imagenes/off.svg">
+        </a>
+        <a href="index.html">
+        <i class="fa-solid fa-power-off"></i>
+        </a>
         <div class="abajosub"> <!--REvisar el class porque esta en dashboard-->
-            <img src="imagenes/3. franjaninios.svg">
-            <img src="imagenes/1. linea.png">
+            <img src="imagenes/franja.jpg">
         </div>
-    </header>
     </div>
+    </header>
+
     <main>
         <section>
-            <div class="boton"> 
-                <a href=""> Agregar</a><!--REvisar como es esto de agregar-->
-            </div>
-            <h3>Pacientes</h3>
+            
+            <section id="botones">
+                <div>
+                <button class="agregar"> <a href="dashboard.html" >Agregar</a><i class="fa-solid fa-user-plus icon"></i></button>
+                </div>
+            <div>
             <label for="buscar"></label>
-                <input type="search" name="search" id="search" placeholder=" Numero de documento ">
-                <input type="submit" value="Buscar">
-            <img src="/imagenes/bx-search.svg">
-        </section>
+                <input  class="form-label" type="search" name="search" placeholder=" Numero de documento ">
+                <a href="pacientes.html">
+                    <button class="buscar2"> <i class="fa-solid fa-magnifying-glass buscador icon"></i>
+                    </button>
+                    </a>
+            </div>
+            </section>
+        </div>
+        <div class="titulopa">
+            <h3>PACIENTES</h3>
+        </div>
+        </div>
         <section id="table">
    
-
-            <table border="2px">
+            <table>
             <tr>
                 <th># DE REGISTRO</th>
                 <th># DOCUMENTO</th>
@@ -49,14 +70,16 @@
                 <td>Perezeses</td>
                 <td>2+16</td>
                 <td>
-                    <div class="form-group">
-                        <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                    </div>
-        
-                    <div  class="form-group">
-                        <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                        <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                    <div class="form-group3">
+                        <button class="btn-azul">
+                        Editar
+                        <i class="fa-solid fa-pen"></i>
+                        </button>
+            
+                        <button class="btn-rojo">
+                            Eliminar
+                            <i class="fa-solid fa-rectangle-xmark icon"></i>
+                            </button>
                     </div>
         
                 </td>
@@ -68,14 +91,16 @@
             <td>Perez</td>
             <td>33</td>
             <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                </div>
-        
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                <div class="form-group3">
+                    <button class="btn-azul">
+                    Editar
+                    <i class="fa-solid fa-pen"></i>
+                    </button>
+ 
+                    <button class="btn-rojo">
+                        Eliminar
+                        <i class="fa-solid fa-rectangle-xmark icon"></i>
+                        </button>
                 </div>
         
             </td>
@@ -87,14 +112,16 @@
             <td>Sarmiento</td>
             <td>28</td>
             <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                </div>
-        
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                <div class="form-group3">
+                    <button class="btn-azul">
+                    Editar
+                    <i class="fa-solid fa-pen"></i>
+                    </button>
+  
+                    <button class="btn-rojo">
+                        Eliminar
+                        <i class="fa-solid fa-rectangle-xmark icon"></i>
+                        </button>
                 </div>
         
             </td>
@@ -106,14 +133,16 @@
             <td>Paba</td>
             <td>28</td>
             <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                </div>
-        
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                <div class="form-group3">
+                    <button class="btn-azul">
+                    Editar
+                    <i class="fa-solid fa-pen"></i>
+                    </button>
+   
+                    <button class="btn-rojo">
+                        Eliminar
+                        <i class="fa-solid fa-rectangle-xmark icon"></i>
+                        </button>
                 </div>
         
             </td>
@@ -125,14 +154,16 @@
             <td>Paba</td>
             <td>28</td>
             <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                </div>
-        
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                <div class="form-group3">
+                    <button class="btn-azul">
+                    Editar
+                    <i class="fa-solid fa-pen"></i>
+                    </button>
+      
+                    <button class="btn-rojo">
+                        Eliminar
+                        <i class="fa-solid fa-rectangle-xmark icon"></i>
+                        </button>
                 </div>
         
             </td>
@@ -144,24 +175,26 @@
             <td>Guitierrez</td>
             <td>35</td>
             <td>
-                <div class="form-group">
-                    <input type="submit" name="editar" class="btn-azul" value="Editar">
-                    <img src="/imagenes/pencil.svg">
-                </div>
-        
-                <div  class="form-group">
-                    <input type="submit" name="registrar" class="btn-rojo"value="Eliminar">
-                    <img src="/imagenes/pencil.svg"> <!--Buscar cuadro de x-->
+                <div class="form-group3">
+                    <button class="btn-azul">
+                    Editar
+                    <i class="fa-solid fa-pen"></i>
+                    </button>
+ 
+                    <button class="btn-rojo">
+                        Eliminar
+                        <i class="fa-solid fa-rectangle-xmark icon"></i>
+                        </button>
                 </div>
         
             </td>
         </tr>
+    </table>
     </section>
     </main>
     
-    </table>
     <footer>
-        <p>@2020 FORJA EMPRESAS</p>
+        <p class="footp">@2020 FORJA EMPRESAS</p>
     </footer>
     
 </body>

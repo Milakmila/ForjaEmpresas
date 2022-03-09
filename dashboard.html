@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,48 +14,65 @@
 </head>
 <body>
     
-
 <main>
 <article>
     <section id="izquierda">
     
         <img src="imagenes/0. logoforja.png">
         <article class="box-izquierda">
+            <a href="pacientes.html">
             <i class="fa-solid fa-users"></i>
             <h4>Pacientes</h4>
+            </a>
         </article>
         <article class="box-izquierda">
+            <a href="https://forjaempresas.com/vacunacion/#/">
             <i class="fa-solid fa-syringe"></i>
             <h4>Vacunación</h4>
+        </a>
         </article>
         <article class="box-izquierda">
+            <a href="index.html">
             <i class="fa-solid fa-power-off"></i>
             <h4>Cerrar sesión</h4>
+            </a>
         </article>
     </section>
 
 <section class="usuario">
-    <i class="fa-duotone fa-circle-user"></i>
+    <i class="fa-solid fa-user icon2"></i>
+    <span>
     <p>Camila Cipagauta</p>
+    </span>
+
 </section> 
-<section>s
+<section>
     <article class="principal">
         <h2>BIENVENIDOS</h2>
         <div class="botones">
         <label for="buscar"></label>
             <input type="search" name="search" id="search" placeholder="Digita el numero de documento" required>
-        <button class="buscar"> <a href="pacientes.html"></a><i class="fa-solid fa-magnifying-glass buscador"></i>
+        <a href="pacientes.html">
+        <button class="buscar"> <i class="fa-solid fa-magnifying-glass buscador"></i>
+        </button>
+        </a>
+        <a href="dashboard.html"></a>
+        <button class="reload"><i class="fa-solid fa-arrow-rotate-right reload"></i>
         </button>
         
-        <button class="reload"> <a href="dashboard.html"></a><i class="fa-solid fa-arrow-rotate-right reload"></i>
-        </button>
-        </div>
     </article>
-                
-    <section id="abajo">
-    <img src="imagenes/1. linea.png">
+</section>
+
+<section class="guerreros">
+    <img src="imagenes/13. guerreros.png">  
+</section>
+
+<section id="abajo">
+    <img src="imagenes/franja.jpg">
     </section>
-</article>
+
+
 </main>
+
 </body>
 </html>
