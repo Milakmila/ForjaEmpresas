@@ -523,7 +523,7 @@ a:focus{color: #A40101;}
 /*Pacientes*/
 
 .superior{
-    background-color: #1D1B45;
+    background-color: rgba(29, 27, 69,5);
     align-items: center;
     display: flex;
     flex-wrap: wrap;
