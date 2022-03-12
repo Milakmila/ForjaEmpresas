@@ -33,7 +33,7 @@ button{
 }
     .telefono{
         display: flex;
-        margin: 3rem 1rem 2rem 30rem;
+        margin: 2rem 1rem 1rem 30rem;
         align-items: center; 
     
         }
@@ -47,7 +47,7 @@ button{
     .ubicacion{
         display: flex;
         align-items: center;
-        margin:1rem 0rem 0rem 3rem ;
+        margin:2rem 0rem 0rem 3rem ;
         
     }
         .ubicacion p{
@@ -56,47 +56,43 @@ button{
             padding-bottom: 0.1rem;
             font-weight: 300;
         }
-    .botonprincipal{
-        display: flex;
-        justify-content: center;
-        width:8.8rem;
-        height: 2rem;
-        background-color: rgba(11, 87, 149,1);
-        border-radius: 15rem;
-        text-decoration: none;
-        margin: 10px 10px; 
-        padding-top: 0.1rem;
-    }
-    
-    .botonprincipal a{
-        color: white;
-        padding: 0.2rem;
-        text-align: center;
-        font-weight: 800;
-        text-decoration: none;
+.botonprincipal{
+    display: flex;
+    align-items: center;
+    border-radius: 15rem;
+    background-color: #1D1B45;
+    border-width: 0;
+    height: 35px;
+        }
+        .botonprincipal p{
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            margin-left: 0.2rem;
+        }
+        .icon{
+            color: white;
+            margin-left: 0.5rem;
+            margin-right: 0.2rem;
+            padding-bottom: 0.2rem;
         
-    }
+        }
+
     .lugarbtn{
         margin-left: 32rem;
         margin-top: 2.8rem;
     }
-
-    .icon{
-        color: white;
-        padding-top: 0.4rem;
-        margin-left: 0.4rem;
-        width: 10px;
-    }
- .icono{
-     display: flex;
-     flex-direction: row;
-     padding-bottom: 3rem;
- }
-.iconovaccine{
-    padding: 0.1rem 5rem 0rem 1rem;
-    align-items:baseline;
-    color: #F3610E;
+.icono{
+    display: flex;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
 }
+    .icono i{
+        padding-left: 3rem;
+        color: #F3610E;
+     
+    }
+ 
 #linea{
     width:70rem;
     padding-left: 125px;
@@ -139,9 +135,11 @@ button{
     padding: 0.1rem 2rem 0rem 27rem;
 
 }
-#abajo{
-    margin-top: 0.1rem;
-    margin-bottom: 3rem;
+.franja{
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    top: 201px;
     
 }
 
@@ -162,7 +160,7 @@ button{
 .subtitulos{
     display: flex;
     font-size: 22px;
-    padding: 1rem 12rem;
+    padding: 1rem 12rem 0rem 12rem;
 
 }
     .subtitulos h3{
@@ -171,21 +169,20 @@ button{
     }
     .subtitulos img{
         width:50px ;
-        padding-right: 2rem;
+        padding-right: 1rem;
     }
 
     .lista ul{
         list-style: none;
         text-align:left;
         font-size: 19px;
-        padding: 1rem 18rem;
+        padding: 0rem 18rem;
     }
     .check{
         width: 38px;
         margin-right: 0.5rem;
     }
     .lista li{
-        
         padding-bottom: 1rem;
 
     }
@@ -234,7 +231,7 @@ button{
 
 .blanco{
     background-color: white;
-    padding: 0.6rem 0  0 0.1rem;
+    padding: 0.6rem 0 0rem;
 }
 .footp{
     display: flex;
@@ -242,7 +239,7 @@ button{
     color: white;
     text-align: center;
     padding-left: 55rem;
-    height: 100px;
+    height: 90px;
 }
 /*Login*/
 
@@ -268,7 +265,7 @@ button{
     border-color: #2CA3AB;
     border-radius: 8px;
     border-style: solid ;
-    border-width: 1px;
+    border-width: 1.5px;
     outline: none;
     padding: 0.2rem 0.5rem;
 }
@@ -287,14 +284,21 @@ button{
     border-width: 2px;
     border-radius: 0.8rem;
     font-weight: 300;
-    box-shadow: #1D1B45;]/*Sombra*/
+    box-shadow:1px 1px 0.2px black;
     
+}
+#box-login p{
+    font-size: 14px;
+    font-weight: 500;
 }
 .encabezado{
     background-color: rgba(44, 163, 171,0.45);
     padding: 3rem 5rem;
-    margin-bottom:0.1rem;
     border-radius: 0.8rem 0.8rem 0rem 0rem;
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 0.5px;
+    outline: none;
 }
 .encabezado img{
     width:15rem;
@@ -304,6 +308,7 @@ button{
     text-align: center;
     font-weight: 400;
 }
+
 
 .form-group-login{
     text-align: center;
@@ -334,15 +339,15 @@ button{
     justify-content: center;
     font-size: 11px;
     margin-bottom: 0.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 #ingresar{
     font-family:'Poppins', sans-serif;
     background-color: var(--Orange);
     border-color: var(--Cadet);
     border-radius: 10px;
+    border-color: rgba(11, 87, 149,1) ;
     border-style: solid ;
-    background-color: ;
     border-width: 1px;
     outline: none;
     padding: 0.3rem 2rem;
