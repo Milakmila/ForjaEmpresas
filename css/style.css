@@ -94,17 +94,14 @@ button{
     }
  
 #linea{
-    width:70rem;
-    padding-left: 125px;
+    width:62rem;
+    height: 3rem;
+    padding-left: 224px;
     padding-bottom:1rem ;
     
 }
 
-#linea2{
-    
-    width:80rem;
-    padding-left: 605px;
-}
+
 /*Main*/
  
 
@@ -212,7 +209,7 @@ button{
 }
 
 #tips{
-    height: 385px;
+    height: 275px;
     background-color: gray;
     display: flex;
     flex-direction: column;
@@ -224,14 +221,14 @@ button{
     background-color: #242336;
     color: white;
     margin-top: 0.1rem;
-    padding: 1.2rem;
-    margin-bottom: 1rem;
+    padding: 0.6rem;
+    margin-bottom: 0.9rem;
 
 }
 
 .blanco{
     background-color: white;
-    padding: 0.6rem 0 0rem;
+    padding: 1rem 0 0 0rem;
 }
 .footp{
     display: flex;
@@ -370,7 +367,7 @@ a:focus{color: #A40101;}
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: var(--Cadet);
+    background-color: #1c1d36 ;
     width:21rem;
     height: 59rem;
     float: left;
@@ -412,6 +409,11 @@ a:focus{color: #A40101;}
 .box-izquierda a{
     text-decoration: none;
 }
+.box-izquierda h4{
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 19px;
+}
 
 .box-izquierda:hover{
     background-color:var(--Orange);
@@ -425,24 +427,28 @@ a:focus{color: #A40101;}
     display: flex;
     align-items: center;
     flex-direction: row;
+    background: linear-gradient(to bottom , #C4C4C4,white);
     background-color: #C4C4C4;
     margin-left: 102rem;
     text-align: left;
     justify-content: flex-end;
-    margin-right: 3rem;
+    margin-right: 3.5rem;
     border-radius: 10px;
     font-size: 0.9rem;
 }
-.icon2{
+.usuario i{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 37px;
     height: 35px;
-    border-color: #F3610E;
-    background-color:white ;
     border-radius: 50%;
+    border-color: var(--Orange);
+    border-style: solid ;
+    border-width: 2px;
+    outline: none;
 }
+
 .usuario i{
     display: flex;
     align-items: center;
@@ -462,13 +468,15 @@ a:focus{color: #A40101;}
 .principal h2{
     margin-top:3rem ;
     font-size: 45px;
-    font-weight: 300;
+
+    font-weight: 400;
     margin-bottom: 7rem;
+ 
 }
 
 .botones{
     display: flex;
-    padding: 0rem 0.9rem;
+    padding: 0rem 1rem;
     margin:0rem 3rem;
     
 }
@@ -515,7 +523,7 @@ a:focus{color: #A40101;}
 #abajo{
     position: relative;
     left:0rem ;
-    bottom: 5rem;
+    bottom: 7.5rem;
 
 }
 #barra img{
@@ -525,13 +533,84 @@ a:focus{color: #A40101;}
     max-width: 98%;
     max-height: 98%;
 }
+/*Alerta*/
+#fondo{
+background-image: url(../imagenes/alerta.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#alerta-box{
+    background-color: whitesmoke;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagen{
+    display: flex;
+    width: 260px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 110px;
+    
+}
+#alerta-box h2{
+    color: black;
+    font-weight: 300;
+    text-align: center;
+
+}
+#gracias{
+    font-family:'Poppins', sans-serif;
+    background-color: var(--Orange);
+    border-color: var(--Cadet);
+    border-color: var(--Viridian-green) ;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
+    padding: 0.3rem 2rem;
+    position: relative;
+    left: 140px;
+}
+#gracias a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#cancel{
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    margin-left: 18rem;
+    background-color:var(--Cadet);
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1.5px;
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    position: relative;
+    right: 100px;
+}
+#cancel a{
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 /*Pacientes*/
 
 .superior{
-    background-color: rgba(29, 27, 69,5);
+    background-color:#18182a;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    height: 197px;
 
 }
 .superior img{
@@ -539,7 +618,7 @@ a:focus{color: #A40101;}
 }
 .superior i{
     background-color: white;
-    padding: 1rem;
+    padding: 0.8rem;
     align-items: flex-end;
     margin: 0.9rem ;
     border-radius: 50%;
@@ -554,9 +633,11 @@ a:focus{color: #A40101;}
 #botones{
     display: flex;
     justify-content: space-between;
-    margin: 2rem 5rem;
+    margin: 2rem 28rem;
 }
-
+#distancia{
+    margin-top: 120px;
+}
 .agregar{
     background-color: var(--Orange);
     padding:0.5rem ;
@@ -574,12 +655,11 @@ a:focus{color: #A40101;}
 }
 
 #search2{
-    display: flex;
-    flex-direction: row;
-    width:180px ;
-    border-radius: 3px;
+    width:150px ;
+    border-radius: 6px;
+    border-width: 2px;
     border-color: var(--Viridian-green);
-    margin-right: 1rem;
+  
 }
 .pacientes {
     color: #1D1B45;
@@ -587,6 +667,7 @@ a:focus{color: #A40101;}
     font-size: 2rem;
     font-weight:400 ;
     text-align: center;
+    height: 350px;
 
 }
 .buscar2{
@@ -596,7 +677,7 @@ a:focus{color: #A40101;}
     border-color: var(--Viridian-green);
     border-width: 3.5px;
     border-radius: 5px;
-    margin-left:  1rem;
+   
 
 }
 .titulopa h3{
@@ -607,15 +688,16 @@ a:focus{color: #A40101;}
     font-size: 2rem;
 }
 #table{
+    margin: 15px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-color: #2CA3AB;
-    border-style: solid ;
-    border-width: 1px;
-    outline: none;
-    border-radius: 4px;
+  
+}
+table{
+    background-color: #2CA3AB;
 }
 
 #table th {
@@ -644,6 +726,7 @@ a:focus{color: #A40101;}
 }
 .btn-rojo{
     height: 2.1rem;
+    font-weight: 500;
     background-color: #A40101;
     border-radius: 4px;
     border-color: #A40101;
@@ -691,23 +774,40 @@ a:focus{color: #A40101;}
     border-style: solid ;
     border-width: 1px;
     width: 500px;
-    height:28px ;
+    height:30px ;
     outline: none;
-
-    
+   
 }
 
 
 .divisionforms{
-   display: flex;
-    flex-direction: row;
+    display: flex;
+
     justify-content: center;
+    background-color: #2CA3AB;
     background-color: #2CA3AB;
     border-radius: 10px;
 }
+
 .divisionforms h4{
     font-weight: 400;
     color: white;
+}
+.divisionforms i{
+    position: relative;
+    top: 23px;
+    right: 420px;
+}
+.form-label-last{
+    margin: 0.6rem 0.7rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #2CA3AB;
+    border-style: solid ;
+    border-width: 1px;
+    outline: none;
+
 }
 
 .sino{
